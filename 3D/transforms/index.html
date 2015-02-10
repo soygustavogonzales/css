@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		border: 0;
+		padding: 0;
+	}
+	div{
+		display: inline-block;
+	}
+		.inner {
+			width: 500px;
+			height:500px;
+			background: url(http://scottdejonge.com/wp-content/uploads/2013/07/flatstrap-500x500.png);
+			transform: perspective(20em);
+			transition: transform .75s;
+			transform-origin: 0px 0px;
+			transform-origin: 0% 50%;/*se toma como punto de origin a la mitad en x e y del elemento*/
+		}
+		.inner:hover{
+			/*
+			transform:perspective(20em) translateZ(7.5em) rotateZ(62deg) rotateX(50deg) rotateY(30deg);
+			transform:perspective(20em) translateZ(7.5em) rotateZ(62deg) ;
+			transform:perspective(20em) translateZ(7.5em);
+			transform:translateZ(2.5em) rotateY(30deg);
+			*/
+			transform:perspective(20em) rotateY(30deg);
+		}
+		.outer {
+			/*
+			perspective-origin: 0% 0%;
+			*/
+		}
+		.text {
+			transform: perspective(1217px) translateZ(1002px);
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner">
+			<img src="" alt="fondo">
+		</div>
+		<span class="text"> Lorem ispansum dolor sit amet.</span>
+	</div>
+</body>
+</html>

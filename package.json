@@ -1,0 +1,18 @@
+{
+  "name": "sensei-app",
+  "version": "0.0.1-4",
+  "main": "bin/www.js",
+  "private": true,
+  "engines": {
+    "node": "0.10.x"
+  },
+  "author": "Gustavo Gonzales",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "~3.8.8"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "gulp-livereload": "latest"
+  }
+}
