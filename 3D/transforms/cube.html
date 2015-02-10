@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cube 3d</title>
+	<style>
+		.outer{
+			/*
+			-webkit-animation:rotar 5s infinite;
+			transform-origin:50% 50%;
+			width: 250px;
+			height: auto;
+			*/
+		}
+		.inner{
+			transform:perspective(20em) rotateX(70deg);
+			transform-origin:50% 50%;
+			-webkit-animation:rotar 5s infinite;
+			background: #eee;
+			width:200px;
+			height:200px;
+		}
+
+		@-webkit-keyframes rotar{
+			from{
+				transform:perspective(20em) rotateX(70deg) rotateZ(0deg);
+
+			}
+			to{
+				transform:perspective(20em) rotateX(70deg) rotateZ(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae iste ea consequuntur placeat voluptates rem, aspernatur minus ex perspiciatis asperiores labore, ut deleniti numquam officia ipsa, ullam nostrum facilis temporibus.</div>
+	</div>
+</body>
+</html>
